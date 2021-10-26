@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .colum{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>strech</p>
+    <section class="container strech">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container flex-end">
+        <div class="item"><br>item1</div></div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start colum">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end colum">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>center</p>
+    <section class="container center colum">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline colum">
+        <div class="item"><br>item1</div></div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum tecto. lipsum lorem </div>
+    </section>
+
+    <p>alinhamento central a tela</p>
+    <section class="container central center">
+        <div class="item">21 de mai. de 2021 — Text.app is a simple text editor for Chrome OS and Chrome. It's fast, lets you open multiple files at once, has syntax highlighting, </div>
+    </section>
+</body>
+</html>
