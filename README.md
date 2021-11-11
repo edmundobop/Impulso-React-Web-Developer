@@ -1,2 +1,2 @@
 # Impulso-React-Web-Developer
-Conceitos sobre Responsividade e FelxBox
+Conceitos sobre Responsividade e FlexBox
